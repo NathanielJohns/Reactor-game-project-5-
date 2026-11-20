@@ -15,6 +15,12 @@ if play == "y":
 elif play == "n":
     print("Oh well, maybe next time.")
 else:
-    print("Please enter y or n.")
-    replay=input("Would you like to play a game with me? y/n ").lower()
-    
+    print("Please enter yes or no.")
+reactor_problem=input("OH NO! your reactor is unstablizing you must run to the reactor chamber and repair the reactor.do you do it?").lower()
+
+if reactor_problem == "yes":
+    print("you have a wrench but it is a tretouris you must go through a bunch of wires to reach the problem and you manage to fix it")
+elif reactor_problem == "no":
+    print("you use the reactor control switch to emeregency power off the reactor you are a whimp")
+else:
+    replay=input("OH NO! your reactor is unstablizing you must run to the reactor chamber and repair the reactor.do you do it?")
